@@ -17,3 +17,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/about', function () {
+    
+    $numCasuale = rand(0,100);
+
+    $listSpesa = ['pomodoro', 'banane', 'insalata'];
+   
+
+    return view('about', [
+        'numeroCasuale' => $numCasuale,
+        'listaSpesa'=> $listSpesa
+    ]);
+}); 
