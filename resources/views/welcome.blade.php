@@ -83,6 +83,10 @@
                 <div class="title m-b-md">
                     Hello wordl!
                 </div>
+                <div class="links">
+
+                    <a href="{{ route('primiPassi') }}">Primi Passi</a>
+                </div>
             </div>
         </div>
     </body>

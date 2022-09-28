@@ -15,17 +15,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
-Route::get('/about', function () {
+Route::get('/primiPassi', function () {
     
     $numCasuale = rand(0,100);
 
     $listSpesa = ['pomodoro', 'banane', 'insalata'];
    
 
-    return view('about', [
+    return view('/primiPassi', [
         'numeroCasuale' => $numCasuale,
         'listaSpesa'=> $listSpesa
     ]);
-}); 
+})->name('primiPassi'); 
